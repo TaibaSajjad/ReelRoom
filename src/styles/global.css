@@ -1305,7 +1305,9 @@ a {
   }
 
   .nav-search {
-    display: none;
+    display: flex;
+    width: 34px;
+    height: 34px;
   }
 }
 /* =========================
@@ -1918,37 +1920,62 @@ a {
     flex-direction: column;
   }
 
+  /* Horizontal movie cards on mobile */
   .home-movie-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px 12px;
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 2px 2px 12px;
+  }
+
+  .home-movie-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-movie-grid .movie-card {
+    flex: 0 0 170px;
+    width: 170px;
   }
 
   .home-movie-grid .movie-card-image {
-    height: 280px;
+    width: 170px;
+    height: 255px;
   }
 
-  .genres-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  .home-movie-grid .movie-card-info {
+    min-height: 58px;
   }
 
-  .genre-card {
-    min-height: 190px;
-    padding: 20px;
-  }
-
-  .genre-card-icon {
-    margin-top: 25px;
-    font-size: 25px;
-  }
-
-  .genre-card h3 {
+  .home-movie-grid .movie-card-info h3 {
     font-size: 11px;
+    line-height: 1.4;
   }
 
-  .genre-arrow {
-    right: 15px;
-    bottom: 15px;
+  .home-movie-grid .movie-meta {
+    font-size: 8px;
+    gap: 5px;
+  }
+
+  .home-movie-grid .movie-arrow {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  /* Genre cards remain horizontal */
+  .genres-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+
+  .genres-grid::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -3836,103 +3863,6 @@ a {
   font-size: 9px;
 }
 
-
-/* =========================================================
-   LANGUAGE
-========================================================= */
-
-.language-section {
-  background: var(--bg-main);
-  padding: 100px 0;
-}
-
-.language-main-icon {
-  color: #e8c98f;
-  font-size: 27px;
-}
-
-.language-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
-}
-
-.language-card {
-  position: relative;
-
-  min-height: 170px;
-
-  padding: 22px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  overflow: hidden;
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.045),
-      rgba(255, 255, 255, 0.01)
-    );
-
-  border: 1px solid rgba(255, 255, 255, 0.07);
-
-  border-radius: 5px;
-
-  transition: 0.3s ease;
-}
-
-.language-card:hover {
-  border-color: rgba(237, 51, 68, 0.45);
-  background:
-    linear-gradient(
-      145deg,
-      rgba(237, 51, 68, 0.12),
-      rgba(255, 255, 255, 0.015)
-    );
-}
-
-.language-number {
-  position: absolute;
-  top: 16px;
-  left: 18px;
-
-  color: #4d515b;
-  font-size: 10px;
-}
-
-.language-card > svg {
-  color: #e8c98f;
-  font-size: 20px;
-  margin-bottom: auto;
-}
-
-.language-card h3 {
-  margin: 0 0 5px;
-
-  color: #fff;
-
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.language-card > span:last-of-type {
-  color: #666b76;
-  font-size: 9px;
-}
-
-.language-arrow {
-  position: absolute;
-  right: 17px;
-  bottom: 18px;
-
-  color: #555963;
-  font-size: 15px;
-}
-
-
 /* =========================================================
    SIX COLUMN MOVIE GRID
 ========================================================= */
@@ -4327,7 +4257,35 @@ a {
     font-size: 21px;
   }
 }
+@media (max-width: 600px) {
 
+  /* Continue Watching - horizontal scroll */
+  .continue-grid {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 2px 2px 12px;
+  }
+
+  .continue-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .continue-card {
+    flex: 0 0 260px;
+    width: 260px;
+  }
+
+  .continue-image {
+    width: 260px;
+    height: 170px;
+  }
+
+}
 
 @media (max-width: 480px) {
 
