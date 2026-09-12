@@ -6,7 +6,7 @@ export const comingSoonMovies = [
     year: 2026,
     releaseDate: "18 Sep 2026",
     duration: "TBA",
-    poster: "/sheroes.jpeg",
+    poster: `${import.meta.env.BASE_URL}sheroes.jpeg`,
   },
   {
     id: "pk-2",
@@ -15,7 +15,7 @@ export const comingSoonMovies = [
     year: 2026,
     releaseDate: "TBA",
     duration: "TBA",
-    poster: "/mango-jutt.jpeg",
+    poster: `${import.meta.env.BASE_URL}mango-jutt.jpeg`,
   },
 ];
 export const actorImages = {
@@ -35,22 +35,25 @@ export const actorImages = {
     "https://upload.wikimedia.org/wikipedia/commons/f/f2/Gohar_Rasheed.jpg",
 
   "Ali Zafar":
-    "/Ali Zafar.jpg",
-  "Maya Ali": "/Maya Ali.jpg",
+    `${import.meta.env.BASE_URL}Ali Zafar.jpg`,
+
+  "Maya Ali":
+    `${import.meta.env.BASE_URL}Maya Ali.jpg`,
 
   "Javed Sheikh":
     "https://pakistanisinkuwait.com/images/6326-javed-sheikh-reveals-the-secrets-of.jpg",
 
   "Humayun Saeed":
-    "/Humayun Saeed.jpg",
+    `${import.meta.env.BASE_URL}Humayun Saeed.jpg`,
 
   "Fahad Mustafa":
-    "/Fahad Mustafa.jpg",
+    `${import.meta.env.BASE_URL}Fahad Mustafa.jpg`,
+
   "Ahmad Ali Butt":
-    "/Ahmad Ali  Butt.jpg",
+    `${import.meta.env.BASE_URL}Ahmad Ali  Butt.jpg`,
 
   "Mehwish Hayat":
-    "/Mehwish Hayat.jpg",
+    `${import.meta.env.BASE_URL}Mehwish Hayat.jpg`,
 
   "Kubra Khan":
     "https://i.tribune.com.pk/media/images/17-lede-main1632555290-0/17-lede-main1632555290-0.jpg",
@@ -59,61 +62,61 @@ export const actorImages = {
     "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mawra_Hocane_arrive_for_Masala%21_Awards_2017_in_Dubai.jpg",
 
   "Ahad Raza Mir":
-    "/Ahad Raza Mir.jpg",
+    `${import.meta.env.BASE_URL}Ahad Raza Mir.jpg`,
 
   "Sanam Saeed":
-    "/Sanam Saeed.jpg",
+    `${import.meta.env.BASE_URL}Sanam Saeed.jpg`,
 
   "Aamina Sheikh":
-    "/Aamina Sheikh.jpg",
+    `${import.meta.env.BASE_URL}Aamina Sheikh.jpg`,
 
   "Shaz Khan":
-    "/Shaz Khan.jpg",
+    `${import.meta.env.BASE_URL}Shaz Khan.jpg`,
 
   "Hania Aamir":
-    "/Hania Amir.jpg",
+    `${import.meta.env.BASE_URL}Hania Amir.jpg`,
 
   "Sheheryar Munawar":
-    "/Sheheryar Munawar.jpg",
+    `${import.meta.env.BASE_URL}Sheheryar Munawar.jpg`,
 
   "Amna Ilyas":
-    "/Amina Ilyas.jpg",
+    `${import.meta.env.BASE_URL}Amina Ilyas.jpg`,
 
   "Mira Sethi":
-    "/Mira Sethi.jpg",
+    `${import.meta.env.BASE_URL}Mira Sethi.jpg`,
 
   "Hareem Farooq":
-    "/Hareem Farooq.jpg",
+    `${import.meta.env.BASE_URL}Hareem Farooq.jpg`,
 
   "Ali Rehman Khan":
-    "/Ali Rehman Khan.jpg",
+    `${import.meta.env.BASE_URL}Ali Rehman Khan.jpg`,
 
   "Usman Mukhtar":
-    "/Usman Mukhtar.jpg",
+    `${import.meta.env.BASE_URL}Usman Mukhtar.jpg`,
 
   "Urwa Hocane":
-    "/Urwa Hocane.jpg",
+    `${import.meta.env.BASE_URL}Urwa Hocane.jpg`,
 
   "Mohsin Abbas Haider":
-    "/Mohsin Abbas Haider.jpg",
+    `${import.meta.env.BASE_URL}Mohsin Abbas Haider.jpg`,
 
   "Samina Ahmad":
-    "/Samina Ahmad.jpg",
+    `${import.meta.env.BASE_URL}Samina Ahmad.jpg`,
 
   "Faiza Hasan":
-    "/Faiza Hasan.jpg",
+    `${import.meta.env.BASE_URL}Faiza Hasan.jpg`,
 
   "Adnan Malik":
-    "/Adnan Malik.jpg",
+    `${import.meta.env.BASE_URL}Adnan Malik.jpg`,
 
   "Mohammad Ahmed":
-    "/Mohammad Ahmed.jpeg",
+    `${import.meta.env.BASE_URL}Mohammad Ahmed.jpeg`,
 
   "Shaniera Akram":
     "https://upload.wikimedia.org/wikipedia/commons/8/8e/Shaniera_Akram.jpg",
 
   "Nayyar Ejaz":
-    "/Nayyar Ejaz.jpeg",
+    `${import.meta.env.BASE_URL}Nayyar Ejaz.jpeg`,
 
   "Shaan Shahid":
     "https://upload.wikimedia.org/wikipedia/commons/7/7d/Shaan_Shahid.jpg",
@@ -152,7 +155,7 @@ export const actorImages = {
     "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ayesha_Omar.jpg",
 
   "Sohai Ali Abro":
-    "/Sohai Ali Abro.jpg",
+    `${import.meta.env.BASE_URL}Sohai Ali Abro.jpg`,
 
   "Ali Kazmi":
     "https://upload.wikimedia.org/wikipedia/commons/8/8b/Ali_Kazmi.jpg",
@@ -164,7 +167,7 @@ export const actorImages = {
     "https://upload.wikimedia.org/wikipedia/commons/6/6d/Sarmad_Khoosat.jpg",
 
   "Sharmeen Obaid-Chinoy":
-    "/Sharmeen Obaid-Chinoy.jpg",
+    `${import.meta.env.BASE_URL}Sharmeen Obaid-Chinoy.jpg`,
 };
 
 const movies = [
