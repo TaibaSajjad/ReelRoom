@@ -1,14 +1,17 @@
+import { useNavigate } from "react-router-dom";
 function Footer() {
+    const navigate = useNavigate();
+
   const goHome = () => {
-    window.location.href = "/";
+    navigate("/");
   };
 
   const goMovies = () => {
-    window.location.href = "/movies";
+    navigate("/movies");
   };
 
   const goWatchlist = () => {
-    window.location.href = "/watchlist";
+    navigate("/watchlist");
   };
 
   const backToTop = () => {
@@ -17,6 +20,25 @@ function Footer() {
       behavior: "smooth",
     });
   };
+  const goToSection = (section) => {
+  if (window.location.pathname === "/") {
+    setTimeout(() => {
+      document.getElementById(section)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 50);
+  } else {
+    navigate("/");
+
+    setTimeout(() => {
+      document.getElementById(section)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 300);
+  }
+};
 
   return (
     <footer className="footer">
@@ -76,17 +98,17 @@ function Footer() {
 <div className="footer-column">
   <h4>DISCOVER</h4>
 
-  <a href="/#genres">
+  <button onClick={() => goToSection("genres")}>
     Browse Genres
-  </a>
+  </button>
 
-  <a href="/#trending">
+  <button onClick={() => goToSection("trending")}>
     Trending Now
-  </a>
+  </button>
 
-  <a href="/#latest">
+  <button onClick={() => goToSection("latest")}>
     Latest Movies
-  </a>
+  </button>
 </div>
 
 

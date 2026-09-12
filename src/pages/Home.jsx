@@ -587,7 +587,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="home-movie-row">
+          <div className="home-movie-row rated-movie-row">
             {highestRated.map((movie, index) => (
               <motion.div
                 className="rated-card"
