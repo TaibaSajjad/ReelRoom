@@ -1294,6 +1294,14 @@ a {
 }
 
 @media (max-width: 420px) {
+
+  .nav-container {
+    width: calc(100% - 20px);
+    height: 62px;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
   .logo-text {
     font-size: 14px;
     letter-spacing: 1.5px;
@@ -1308,6 +1316,13 @@ a {
     display: flex;
     width: 34px;
     height: 34px;
+    flex-shrink: 0;
+  }
+
+  .nav-menu {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
   }
 }
 /* =========================
@@ -4041,6 +4056,18 @@ a {
 }
 
 @media (max-width: 600px) {
+
+  .cast-modal {
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .cast-modal-content {
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+  }
+
   .cast-modal-image {
     height: 350px;
   }

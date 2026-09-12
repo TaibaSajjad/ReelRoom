@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -6,10 +7,20 @@ import Movies from "./pages/Movies";
 import MovieDetails from "./pages/MovieDetails";
 import Watchlist from "./pages/Watchlist";
 import Footer from "./components/Footer";
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 function App() {
   return (
     <BrowserRouter basename="/ReelRoom">
+
+  <ScrollToTop />
 
       {/* FULL PAGE BACKGROUND */}
       <div className="page-bg">
