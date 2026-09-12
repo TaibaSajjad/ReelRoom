@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ReelRoom">
 
       {/* FULL PAGE BACKGROUND */}
       <div className="page-bg">
