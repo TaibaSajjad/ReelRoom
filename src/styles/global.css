@@ -1009,7 +1009,7 @@ a {
   }
 
   .movies-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px 14px;
   }
 
@@ -1088,7 +1088,7 @@ a {
   }
 
   .movies-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .movie-card-image {
@@ -2482,7 +2482,7 @@ a {
   }
 
   .watchlist-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
@@ -3401,7 +3401,7 @@ a {
 @media (max-width: 1000px) {
 
   .top-picks-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .top-pick-image {
@@ -3866,7 +3866,7 @@ a {
 
 .rated-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
@@ -3966,7 +3966,7 @@ a {
 ========================================================= */
 
 .six-column-grid {
-  grid-template-columns: repeat(6, 1fr) !important;
+  grid-template-columns: repeat(4, 1fr) !important;
 }
 
 
