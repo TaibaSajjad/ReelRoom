@@ -18,7 +18,7 @@ function ScrollToTop() {
 }
 function App() {
   return (
-    <BrowserRouter basename="/ReelRoom">
+    <BrowserRouter>
 
   <ScrollToTop />
 
