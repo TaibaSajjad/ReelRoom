@@ -168,6 +168,9 @@ export const actorImages = {
 
   "Sharmeen Obaid-Chinoy":
     `${import.meta.env.BASE_URL}Sharmeen Obaid-Chinoy.jpg`,
+
+  "Om Puri":
+    `${import.meta.env.BASE_URL}Om-Puri.png`,
 };
 
 const movies = [
@@ -936,12 +939,7 @@ const movies = [
       {
         name: "Om Puri",
         character: "Rafiq",
-        image: actorImages["Mohammad Ahmed"],
-      },
-      {
-        name: "Ali Zafar",
-        character: "Supporting Role",
-        image: actorImages["Ali Zafar"],
+        image: actorImages["Om Puri"],
       },
     ],
   },
