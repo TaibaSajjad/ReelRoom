@@ -246,10 +246,10 @@ function Home() {
             y: -6,
           }}
           onClick={() => {
-            window.location.href = `/movies?genre=${encodeURIComponent(
-              genre.name
-            )}`;
-          }}
+  navigate(
+    `/movies?genre=${encodeURIComponent(genre.name)}`
+  );
+}}
           style={{
             cursor: "pointer",
           }}
